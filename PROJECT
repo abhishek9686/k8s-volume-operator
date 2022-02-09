@@ -1,0 +1,19 @@
+domain: example.org
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operator
+repo: github.com/operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.org
+  group: demo
+  kind: DemoVolume
+  path: github.com/operator/api/v1
+  version: v1
+version: "3"

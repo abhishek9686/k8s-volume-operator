@@ -1,0 +1,8 @@
+apiVersion: demo.example.org/v1
+kind: DemoVolume
+metadata:
+  name: demovolume-sample
+spec:
+  # TODO(user): Add fields here
+  name: demo
+  size: 10
